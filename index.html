@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>Uniview Asset</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="dataTables.css" />
   <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-  <table id="example">
-
-  </table>
+  <h1>No Uniview Table here just yet. Still testing DataTables Plugin</h1>
+  
+  <table id="example"></table>
   <table id="table1">
         <thead>
             <tr>
@@ -124,10 +125,11 @@
             </tr>
         </thead>
     </table>
-  
+    <table id="table4"></table>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  
   <script>
     var dataSet = [
     [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
@@ -166,7 +168,7 @@
     [ "Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500" ],
     [ "Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050" ],
     [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
-];
+    ];
     $(document).ready(function() {
         $('#example').DataTable( {
             data: dataSet,
@@ -186,7 +188,7 @@
       $('#table1').DataTable();
     })
   </script>
-  <script>
+  <!-- <script>
     var array = [
     [
         "Ram",
@@ -224,7 +226,7 @@
   data: array,
   "pageLength": 3
   });
-</script>
-  
+</script> -->
+  <script src="index.js">  </script>
 </body>
 </html>
